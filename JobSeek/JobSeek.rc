@@ -1,0 +1,378 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\JobSeek.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\JobSeek.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 JobSeek"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "JobSeek 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_JOBINFO_DIALOG DIALOGEX 0, 0, 436, 351
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "岗位信息"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,315,275,50,14
+    LTEXT           "公司名称：",IDC_COMPANYNAME_LABEL,55,77,41,8
+    EDITTEXT        IDC_COMPANYNAME_EDIT,97,73,158,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "发布日期：",IDC_RELEASEDATE_LABEL,57,129,41,8
+    LTEXT           "工作年限：",IDC_WORKDURATION_LABEL,59,166,41,8
+    LTEXT           "工作地点：",IDC_WORKPLACE_LABEL,205,130,41,8
+    LTEXT           "学历：",IDC_EDUCATION_LABEL,207,163,25,8
+    LTEXT           "招聘人数：",IDC_HIRENUMBER_LABEL,59,197,41,8
+    EDITTEXT        IDC_ReleaseDate_EDIT,101,124,80,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_WORKDURATION_EDIT,101,161,80,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_WORKPLACE_EDIT,249,123,48,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDUCATION_EDIT,249,158,80,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_HIRENUMBER_EDIT,103,197,80,16,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "职位名称：",IDC_JOBNAME_LABEL,55,54,41,8
+    EDITTEXT        IDC_JOBNAME_EDIT,97,50,158,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "前一条",IDC_PRERECORD,59,275,50,14
+    PUSHBUTTON      "后一条",IDC_NEXTRECORD,143,275,50,14
+    PUSHBUTTON      "发求职信",IDC_SENDMAIL,227,275,50,14
+    LTEXT           "联系人：",IDC_CONTACTOR_LABEL,207,197,33,8
+    EDITTEXT        IDC_CONTACTOR_EDIT,251,197,80,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "联系电话:",IDC_CONTACTNUMBER_LABEL,57,233,37,8
+    EDITTEXT        IDC_CONTACTNUMBER_EDIT,101,233,98,16,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "邮件:",IDC_CONTACTEMAIL_LABEL,207,233,21,8
+    EDITTEXT        IDC_CONTACTEMAIL_EDIT,251,233,131,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_REGISTER_DIALOG DIALOG DISCARDABLE  0, 0, 336, 338
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户注册"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_USERNAME_EDIT,71,34,76,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD_EDIT,71,57,76,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_REPASSWORD_EDIT,206,57,76,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAILAddress_EDIT,78,106,118,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAILName_EDIT,84,132,79,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAILPORT_EDIT,206,131,79,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAILCode_EDIT,75,152,79,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAILContent_EDIT,207,153,79,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAILSMTP_EDIT,75,172,79,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAILAttachment_EDIT,207,173,79,14,ES_AUTOHSCROLL
+    CONTROL         "男",IDC_MALE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,63,226,24,10
+    CONTROL         "女",IDC_FEMALE_RADIO,"Button",BS_AUTORADIOBUTTON,96,226,
+                    24,10
+    EDITTEXT        IDC_AGE_EDIT,202,223,63,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_EDUCATION_COMBO,57,243,77,95,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_MAJOR_EDIT,202,243,79,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXPERENCE_EDIT,87,264,76,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_INDUSTRY_EDIT,224,264,79,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PROVINCE_COMBO,89,284,51,121,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REGION_COMBO,140,284,45,96,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SALARY_EDIT,237,279,63,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "基本信息",IDC_STATIC,24,23,280,55,NOT WS_VISIBLE
+    LTEXT           "用户名：",IDC_USERNAME_LABEL,30,38,33,8
+    LTEXT           "密码：",IDC_PASSWORD_LABEL,30,60,25,8
+    PUSHBUTTON      "检测用户名是否已经存在",IDC_CHECK_USERNAME,162,35,92,14
+    LTEXT           "确认密码：",IDC_REPASSWORD_LABEL,162,58,41,8
+    GROUPBOX        "邮箱信息",IDC_email,23,96,282,101,NOT WS_VISIBLE
+    LTEXT           "邮箱地址：",IDC_EMAILAddress_LABEL,31,111,41,8
+    LTEXT           "邮箱用户名：",IDC_EMAILName_LABEL,32,136,49,8
+    LTEXT           "密码：",IDC_EMAILCode_LABEL,34,156,25,8
+    LTEXT           "服务器：",IDC_EMAILSmtp_LABEL,34,175,33,8
+    LTEXT           "端口号：",IDC_EMAILPort__LABEL,164,135,33,8
+    LTEXT           "正文名：",IDC_EMAILContent_LABEL,166,157,33,8
+    LTEXT           "附件名：",IDC_EMAIL_Attachment_LABEL,166,176,33,8
+    GROUPBOX        "详细信息",IDC_STATIC,22,210,283,91,NOT WS_VISIBLE
+    LTEXT           "性别：",IDC_SEX_LABEL,31,226,25,8
+    LTEXT           "学历：",IDC_EDUCATION_LABEL,31,245,25,8
+    LTEXT           "工作经验(年)：",IDC_EXPERENCE_LABEL,30,267,53,8
+    LTEXT           "期望工作地区：",IDC_EXPCLOC_LABEL,32,286,57,8
+    LTEXT           "年龄：",IDC_AGE_LABLE,175,226,25,8
+    LTEXT           "专业：",IDC_MAJOR_LABEL,175,245,25,8
+    LTEXT           "希望从事行业：",IDC_EXPCIND_LABEL,167,267,57,8
+    LTEXT           "期望薪水：",IDC_EXPCSAL_LABEL,192,283,41,8
+    DEFPUSHBUTTON   "注册",ID_REGISTER,82,314,50,14
+    PUSHBUTTON      "关闭",ID_REGISTER_CLOSE,189,314,50,14
+END
+
+IDD_SEARCH_DIALOG DIALOG DISCARDABLE  0, 0, 326, 297
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "搜索职位"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "搜索职位",ID_SEARCH_JOB,69,244,50,14
+    PUSHBUTTON      "数据入库",ID_INPORT_DATA,148,244,60,14
+    LTEXT           "用户名：",IDC_USERNAME_LABEL,52,44,33,8
+    GROUPBOX        "搜索条件(留空表示不限)",IDC_STATIC,52,122,225,106,NOT 
+                    WS_VISIBLE
+    LTEXT           "职位名：",IDC_JOBNAME_LABEL,64,148,33,8
+    LTEXT           "公司名：",IDC_COMPANYNAME_LABEL,64,174,33,8
+    LTEXT           "工作地区：",IDC_WORKPLACE_LABEL,64,200,41,8
+    LTEXT           "邮箱：",IDC_EMAIL_LABEL,53,66,25,8
+    EDITTEXT        IDC_JOB_EDIT,105,145,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMPANYNAME_EDIT,105,171,109,14,ES_AUTOHSCROLL
+    LTEXT           "----",IDC_STATIC,154,199,8,8
+    LTEXT           "",IDC_USERNAME_STATIC,94,46,188,11
+    LTEXT           "",IDC_EMAIL_STATIC,86,66,188,11
+    PUSHBUTTON      "关闭系统",IDC_CLOSE,227,244,50,14
+    COMBOBOX        IDC_COMBO_PROVINCE,105,197,48,88,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_REGION,164,197,48,89,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "更新用户信息",IDC_BUTTON_UPDATA,55,83,50,14
+    CONTROL         "模糊匹配",IDC_CHECKCAREER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,147,48,10
+    CONTROL         "模糊匹配",IDC_CHECKCOMPANY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,220,174,48,10
+END
+
+IDD_LOGIN_DIALOG DIALOG DISCARDABLE  0, 0, 470, 290
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登陆自动求职系统"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_USERNAME_EDIT,138,150,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD_EDIT,138,175,84,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录",ID_LOGIN,94,202,50,14
+    PUSHBUTTON      "注册",ID_REGISTER,175,202,50,14
+    LTEXT           "用户名:",IDC_USERNAME_LABEL,107,151,27,8,NOT WS_VISIBLE
+    LTEXT           "密码:",IDC_PASSWORD_LABEL,110,181,19,8,NOT WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "JobSeek Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "JobSeek\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "JobSeek.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "JobSeek 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_JOBINFO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 344
+    END
+
+    IDD_REGISTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 331
+    END
+
+    IDD_SEARCH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 290
+    END
+
+    IDD_LOGIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 463
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BGL          BITMAP  DISCARDABLE     "res\\BG_L.bmp"
+IDB_BITMAP_BGR          BITMAP  DISCARDABLE     "res\\BG_R.bmp"
+IDB_BITMAP_BGIN         BITMAP  DISCARDABLE     "res\\BG_In.bmp"
+IDB_BITMAP_BGS          BITMAP  DISCARDABLE     "res\\BG_S.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 JobSeek(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\JobSeek.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
